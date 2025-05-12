@@ -32,9 +32,8 @@ function renderMoviesFromId(imdbID) {
                 <p class="genre">${data.Genre}</p>
                 <div id="remove-watchlist-container" class="remove-watchlist-container">
                   <img id="remove-icon" class="remove-icon" 
-                  src="images/remove-icon.png" 
-                  data-remove="${data.imdbID}">
-                  <p class="remove-icon">Remove</p>
+                  src="images/remove-icon.png" data-remove="${data.imdbID}">
+                  <p data-remove="${data.imdbID}">Remove</p>
                 </div>
               </div>
               <p class="movie-plot">${data.Plot}</p>

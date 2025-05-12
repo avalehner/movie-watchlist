@@ -75,7 +75,7 @@ function renderMoviesFromId(imdbID) {
                   <img id="add-icon" class="add-icon" 
                   src="images/add-icon.png" 
                   data-add="${movies.imdbID}">
-                  <p class="watchlist">Watchlist</p>
+                  <p class="watchlist" data-add="${movies.imdbID}">Watchlist</p>
                 </div>
               </div>
               <p class="movie-plot">${movies.Plot}</p>

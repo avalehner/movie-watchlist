@@ -74,8 +74,8 @@ main{
 .add-watchlist-container, 
 .remove-watchlist-container{
   display: flex; 
-  align-items: center; 
-  cursor: pointer; 
+  align-items: center;
+  cursor: pointer;  
 }
 
 /* search bar */
