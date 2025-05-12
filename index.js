@@ -38,7 +38,7 @@ function fetchMoviesFromSearch () {
   const movieTitle = searchInput.value
   if (!movieTitle) return
 
-  fetch(`http://www.omdbapi.com/?s=${movieTitle}&apikey=2d86dd0a`)
+  fetch(`https://www.omdbapi.com/?s=${movieTitle}&apikey=2d86dd0a`)
     .then(res => res.json())
     .then(movies => {
       if (movies.Response === "False") {
@@ -56,7 +56,7 @@ function fetchMoviesFromSearch () {
 }
 
 function renderMoviesFromId(imdbID) {
-  fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=2d86dd0a`)
+  fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=2d86dd0a`)
     .then(res => res.json())
     .then(movies => {
         let searchListHtml = `
@@ -93,7 +93,7 @@ function addWatchlist(imdbID) {
   // add movies to local storage for watchlist 
   localStorage.setItem('movies', JSON.stringify(watchlistArr))
 
-  fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=2d86dd0a`)
+  fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=2d86dd0a`)
   .then(res => res.json())
   .then(movie => {alert(`Added '${movie.Title}' to watchlist!`)})
 }

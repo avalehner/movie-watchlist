@@ -13,7 +13,7 @@ document.addEventListener ('click', (e) => {
 
 // functions 
 function renderMoviesFromId(imdbID) {
-  fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=2d86dd0a`)
+  fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=2d86dd0a`)
     .then(res => res.json())
     .then(data => {
       console.log(data)
