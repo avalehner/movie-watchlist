@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <h1>Find your film</h1>
+      <a href="watchlist.html">My Watchlist</a>
+    </header>
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass" style="color: #a5a5a5;"></i>
+      <input type="text" placeholder="Blade Runner" id="search-input">
+      <button id="search-btn">Search</button>
+    </div>
+    <main id="main-container">
+      <img id ="explore-img" class="explore-img" src="images/start-exploring.png">
+      <div id="movie-list-container" class="movie-list-container">
+        <h3 id="error-msg" class="error-msg">Unable to find what you're searching for. <br> Please try another search.</h3>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
