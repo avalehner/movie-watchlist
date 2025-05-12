@@ -1,6 +1,5 @@
 let watchlistArr = []
 const watchlistContainer = document.getElementById('watch-list-container')
-const moviesFromLocalStorage = JSON.parse(localStorage.getItem('movies'))
 
 handleWatchlistDisplay()
 
@@ -66,6 +65,7 @@ function removeWatchlist(imdbID) {
 }
 
 function handleWatchlistDisplay () {
+const moviesFromLocalStorage = JSON.parse(localStorage.getItem('movies'))
   if (moviesFromLocalStorage.length !== 0) {
     //get movies from local storage 
       watchlistArr = moviesFromLocalStorage

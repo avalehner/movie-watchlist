@@ -41,6 +41,7 @@ main{
 
 .watch-list-container{
   width: 85%; 
+  display: none; 
 }
 
 .movie-container{
